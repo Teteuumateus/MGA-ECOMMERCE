@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MGA ECOMMERCE</title>
+    <link rel="stylesheet" href="styles/globals.css">
+    <style>
+        /* Estilos para o menu e outras seções */
+        .section-spacing {
+            margin-bottom: 2rem;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 1.5rem;
+        }
+
+        nav ul li button {
+            background: transparent;
+            border: 2px solid #fff;
+            color: #fff;
+            padding: 0.5rem 1rem;
+            cursor: pointer;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        nav ul li button:hover {
+            background: #fff;
+            color: #2c2c2c;
+        }
+
+        .navbar {
+            background: #2c2c2c;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+            z-index: 99;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header-inner-content {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            color: blue;
+        }
+
+        .logo span {
+            color: aliceblue;
+        }
+
+        .nav-icon-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .nav-icon-container img {
+            width: 30px;
+            cursor: pointer;
+        }
+
+        .nav-icon-container img:first-child {
+            margin-right: 1rem;
+        }
+
+        @media screen and (max-width: 768px) {
+            .header-bottom-side {
+                flex-direction: column;
+                text-align: center;
+            }
+            .header-bottom-side-left {
+                margin-bottom: 2rem;
+            }
+            .header-bottom-side-right {
+                order: -1;
+                margin-bottom: 2rem;
+            }
+            .cols-4 {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="header-inner-content">
+            <h1 class="logo">MGA <span>Ecommerce</span></h1>
+            <nav>
+                <ul>
+                    <li><a href="indexP.html"><button>Home</button></a></li>
+                    <li><a href="indexP.html"><button>Produtos</button></a></li>
+                    <li><button onclick="location.href='indexS.html'">Sobre</button></li>
+                    <li><button onclick="location.href='index.html'">Contato</button></li>
+                    <li><button onclick="location.href='indexL.html'">Conta</button></li>
+                    <li><button onclick="location.href='indexC.html'">Cadastrar</button></li> <!-- Cadastrar button -->
+                </ul>
+            </nav>
+            <div class="nav-icon-container">
+                <img src="imagem/cart.png" alt="Cart Icon"/>
+                <img src="imagem/menu.png" class="menu-button" alt="Menu Icon"/>
+            </div>
+        </div>
+    </div>
+
+    <header>
+        <div class="header-inner-content">
+            <div class="header-bottom-side">
+                <div class="header-bottom-side-left">
+                    <h2>Tenha um estilo novo ao seu trabalho!</h2>
+                    <p>Sucesso nem sempre tem a ver com grandeza. Tem a ver com consistência. Trabalho duro consistente supera o sucesso. A grandeza virá.</p>
+                    <button>Ver agora &#8594;</button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="imagem/gaming-msi-header.png" alt="Header Image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="gray-background">
+            <div class="page-inner-content">
+                <h3 class="section-title" style="text-align: center;">Produtos Selecionados</h3>
+                <div class="subtitle-underline" style="margin: 0 auto;"></div>
+                <div class="cols cols-4">
+                    <div class="Product">
+                        <img src="imagem/product-4.png" alt="Mouse Gamer Razer">
+                        <p class="product-name">Mouse Gamer Razer</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">R$ 400,00</p>
+                    </div>
+
+                    <div class="Product">
+                        <img src="imagem/product-5.png" alt="Teclado Mecânico Corsair">
+                        <p class="product-name">Teclado Mecânico Corsair</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">R$ 600,00</p>
+                    </div>
+                    
+                    <div class="Product">
+                        <img src="imagem/product-6.png" alt="Monitor LG Ultrawide">
+                        <p class="product-name">Monitor LG Ultrawide</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">R$ 1500,00</p>
+                    </div>
+
+                    <div class="Product">
+                        <img src="imagem/product-7.png" alt="Headset HyperX Cloud">
+                        <p class="product-name">Headset HyperX Cloud</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                        <p class="product-price">R$ 800,00</p>
+                    </div>
+                </div>
+
+                <div class="section-spacing"></div>
+
+                <div class="page-inner-content">
+                    <h3 class="section-title" style="text-align: center;">Últimos produtos mais vendidos</h3>
+                    <div class="subtitle-underline" style="margin: 0 auto;"></div>
+                    <div class="cols cols-4">
+                        <div class="Product">
+                            <img src="imagem/product-8.png" alt="IPhone 14 Pro Max 512GB">
+                            <p class="product-name">IPhone 14 Pro Max 512GB</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 8.828,91</p>
+                        </div>
+
+                        <div class="Product">
+                            <img src="imagem/product-9.png" alt="Samsung Galaxy S23 Ultra 1TB">
+                            <p class="product-name">Samsung Galaxy S23 Ultra 1TB</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 3.999,99</p>
+                        </div>
+                        
+                        <div class="Product">
+                            <img src="imagem/product-10.png" alt="Asus Rog Phone 3 Gamer">
+                            <p class="product-name">Asus Rog Phone 3 Gamer</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 3.099,00</p>
+                        </div>
+    
+                        <div class="Product">
+                            <img src="imagem/product-11.png" alt="Xiaomi 13 Ultra">
+                            <p class="product-name">Xiaomi 13 Ultra</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 5.275,00</p>
+                        </div>
+
+                        <div class="Product">
+                            <img src="imagem/product-12.png" alt="Xbox Series X">
+                            <p class="product-name">Xbox Series X</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 4.260,00</p>
+                        </div>
+
+                        <div class="Product">
+                            <img src="imagem/product-13.png" alt="Racing Wheel 4800">
+                            <p class="product-name">Racing Wheel 4800</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 3.200,00</p>
+                        </div>
+                        
+                        <div class="Product">
+                            <img src="imagem/product-14.png" alt="PlayStation 5">
+                            <p class="product-name">PlayStation 5</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 3.900,00</p>
+                        </div>
+    
+                        <div class="Product">
+                            <img src="imagem/product-15.png" alt="Gaming Desktop RTX 3090">
+                            <p class="product-name">Gaming Desktop RTX 3090</p>
+                            <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                            <p class="product-price">R$ 4.500,00</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="gray-background">
+            <div class="header-bottom-side exclusive-container">
+                <div class="header-bottom-side-left">
+                    <h2>Smart Band 4</h2>
+                    <p>A Smart Band 4 é muito mais do que apenas um acessório tecnológico; é uma poderosa aliada para quem busca monitorar sua saúde e melhorar seu condicionamento físico de forma prática e eficaz. Equipada com tecnologia de ponta, esta smart band combina estilo e funcionalidade para oferecer uma experiência completa aos seus usuários.</p>
+                    <button>Ver agora &#8594;</button>
+                </div>
+                <div class="header-bottom-side-right">
+                    <img src="imagem/exclusive.png" alt="Header Image">
+                </div>
+            </div>
+            <div class="page-inner-content">
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <p>"</p>
+                        <p>A experiência de compra na MGA Ecommerce superou minhas expectativas! Produtos de qualidade e entrega rápida.</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                        <p>Mateus Andrade</p>
+                    </div>
+
+                    <div class="testimonial">
+                        <p>"</p>
+                        <p>Desde minha primeira compra na MGA Ecommerce, nunca mais procurei outro lugar. Excelente serviço ao cliente e produtos de alta qualidade.</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                        <p>Erick Gomes</p>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <p>"</p>
+                        <p>Excelente plataforma de e-commerce! A MGA Ecommerce tornou minhas compras online mais simples e seguras.</p>
+                        <p class="rate">&#9733;&#9733;&#9733;&#9734;</p>
+                        <p>Mariana Fonseca</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="gray-background">
+        <div class="page-inner-content footer-content">
+            <div class="download-options">
+                <p>Baixe nossa aplicação para Android e iOS</p>
+                <div>
+                    <img src="imagem/app-store.png" alt="App Store">
+                    <img src="imagem/play-store.png" alt="Play Store">
+                </div>
+            </div>
+        
+            <div class="logo-footer">
+                <h1 class="logo">MGA <span>Ecommerce</span></h1>
+                <p>Descubra o futuro da tecnologia na nossa loja de ecommerce eletrônico, onde inovação e qualidade se encontram para transformar sua experiência digital.</p>
+            </div>
+            <div class="links-footer">
+                <!-- Links adicionais podem ser adicionados aqui -->
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
